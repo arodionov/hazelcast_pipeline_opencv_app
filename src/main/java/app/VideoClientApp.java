@@ -14,7 +14,7 @@ import org.opencv.core.Mat;
 import org.opencv.core.MatOfByte;
 import org.opencv.imgcodecs.Imgcodecs;
 
-public class App
+public class VideoClientApp
 {
     static{
         OpenCV.loadLocally();
@@ -24,7 +24,7 @@ public class App
     private static JLabel imageLabel;
 
     public static void main(String[] args) {
-        App app = new App();
+        VideoClientApp app = new VideoClientApp();
         app.initGUI();
 
         HazelcastInstance client = HazelcastClient.newHazelcastClient();
